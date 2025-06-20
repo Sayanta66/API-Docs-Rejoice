@@ -32,3 +32,10 @@ Here is an external hyperlink:
 .. _Keysight-website: https://www.keysight.com
 
 Go to the Keysight-website_ for more information.
+
+Documentation Hyperlink
+-----------------------
+
+Here is a documentation hyperlink:
+
+Click on :doc:`Learning with Python <new-file>` to learn more about Python.

@@ -1,0 +1,56 @@
+=============================================================
+Creating a new Python virtual environment based on ADS Python
+=============================================================
+
+#.  Create a Python virtual environment (venv). 
+
+    The venv must be created using the Python shipped with ADS, or with another Python installation with the same major and minor version.
+
+    Example for Linux:
+
+    .. code-block:: shell
+
+        $HPEESOF_DIR/tools/python/bin/python3 -m venv --system-site-packages $HOME/ads_venv
+
+    Example for Windows:
+
+    .. code-block:: bat
+
+        %HPEESOF_DIR%\tools\python\python -m venv --system-site-packages %USERPROFILE%\ads_venv
+
+#.  Select the venv by setting **ADS_PYTHONHOME**.
+
+    This can be accomplished either as an environment variable or in de_sim.cfg (user level or above, i.e. not supported in workspace-level cfg)
+
+    Example for Linux: 
+
+    .. code-block:: shell
+
+      export ADS_PYTHONHOME=$HOME/ads_venv
+
+    Example for Windows:
+
+    .. code-block:: bat
+
+      set ADS_PYTHONHOME=%USERPROFILE%\ads_venv
+
+    To set the venv path in de_sim.cfg rather than an environment variable, add a line like this:
+
+    .. code-block:: ini
+
+      ADS_PYTHONHOME={$HOME}/ads_venv
+
+#.  Run ADS. Python support is automatically enabled.
+
+    .. code-block:: shell
+
+      ads
+
+    To verify the venv is being used, execute the menu **Python->Python Console...**, and type the following in the console:
+
+    .. code-block:: python
+
+      import sys
+      print(sys.executable)
+
+    The path to the Python executable will be displayed, and it should be prefixed by the venv path.

@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creating a new Python virtual environment based on ADS Python &mdash; demosphinxproject 0.0.1 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+    
+    <link rel="shortcut icon" href="../_static/images/favico.png"/><link href="../_static/css/darktheme.css" id="stylesheet" rel="stylesheet" disabled="disabled">
+    <script src="../_static/js/rejoice.js"></script>
+
+<script type="text/javascript" src="../_static/jquery.js"></script>
+<script type="text/javascript" src="../_static/underscore.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/documentation_options.js?v=d45e8c67"></script>
+        <script src="../_static/doctools.js?v=9bcbadda"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+  
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="New Environment" href="index.html" />
+
+<script>
+    restoreTheme();
+
+    $(document).ready(function(){
+        
+        try {
+            apiDocsInsertVersionLinks(projectName, currentVersion)
+        }
+        catch(err)
+        {
+            console.log("Failed to run insert_version_links_call: " + err)
+        }
+        
+
+        onRejoiceDocumentReady();
+    });
+</script>
+
+  
+</head>
+
+<body class="wy-body-for-nav">
+
+<div class="ks-header" id="header"/>
+  <div id="header-wrapper">
+    <div id="ks-header-left">
+      <a href="http://www.keysight.com/">
+        <img src="../_static/images/keysight_logo.svg" id="ks-logo" class="logo" alt="Logo"/>
+      </a>
+    </div>
+
+    <script>
+      //Logo ready to be toggled if needed. 
+      toggleLogo();
+    </script>
+    
+    <div id="ks-header-right">
+<div role="search" id="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" id="ks-searchbox" placeholder="Search" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </div>  
+</div>
+
+<div class="ks-toolbar" id="toolbar">
+  <div id="toolbar-wrapper">
+    <div id="ks-toolbar-left">
+      <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+
+      <li><a href="../index.html" class="ks-breadcrumbs icon icon-home">demosphinxproject </a></li>
+        <li><a href="index.html" class= "ks-breadcrumbs">New Environment</a></li>
+      
+      <li>Creating a new Python virtual environment based on ADS Python</li>
+    
+    
+  </ul>
+  
+  
+</div>
+    </div>
+    <div id="ks-toolbar-right">
+
+     
+    
+      
+      <div class="version featurebutton">
+        <div class="version-dropdown">
+          <select class="version-list" id="version-list">
+            <option value='#' selected>0.0.1</option>
+          </select>
+        </div>
+      </div>
+      
+    
+      <button class="themetoggle tooltip featurebutton" id="themebutton" type="button" tooltip-content="Change Theme">
+        <em class="material-icons material-icons-filled" style="font-size:18px">invert_colors</em><span id="themeicontext" class="featurebarlabels" >&nbsp;Theme</span>
+      </button>
+      <button class="tooltip featurebutton" id="feedbackbutton" tooltip-content="Share Feedback">
+        <em class="material-icons material-icons-round" style="font-size:18px">rate_review</em><span id="feedbackicontext" class="featurebarlabels" >&nbsp;Feedback</span>
+      </button>
+            <a class="tooltip featurebutton" id="sourcebutton" href="../_sources/howto/newenv.rst.txt" tooltip-content="View Source">
+              <em class="material-icons material-icons-round" style="font-size:18px">code</em><span id="sourceicontext" class="featurebarlabels">&nbsp;Source</span>
+            </a>
+     
+      <div class="helpmenu">
+      
+        <button id="helpbutton">
+          <em class="material-icons material-icons-round featurebutton" style="font-size:18px">help_center</em><span id="helpicontext"
+            class="featurebarlabels">&nbsp;Help</span>
+        </button>
+      
+        <div class="help-content" id="helpcontent">
+            <a id="helplink1" href="https://www.keysight.com/johndoe" target=”_blank”>Link 1 </a>
+          <a id="contactus" href="https://www.keysight.com/in/en/contact.html"> Contact Keysight</a>
+          
+          <div id="about">
+            About
+          </div>
+        </div>
+      </div>
+      
+
+      <button type="button" id="sidebarlightboxbutton" class="btn btn-info tooltip featurebutton" tooltip-content="Display TOC">
+        <em class="material-icons material-icons-outlined" style="font-size:18px">menu</em><span id="contentsicontext"  class="featurebarlabels">&nbsp;Contents</span>
+      </button>
+
+
+    </div>
+  </div>
+</div> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="sidebar-dragbar" id="sidebar-dragbar"></div>
+      <div class="wy-side-scroll" id="sidebar-scroll">
+
+          <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+            <div class="sidebarheader">
+              <div>
+                Table of contents
+              </div>
+              <div class="sidebarlightboxcontrol">
+                <button type="button" id="closesidebarlightbox" class="btn btn-info">
+                  <em class="material-icons" style="color:#e90029;font-size:18px">close</em>
+                </button>
+              </div>
+            </div>
+
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">New Environment</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Creating a new Python virtual environment based on ADS Python</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap" id="content-wrapper">
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          
+          <div role="main" class="document " itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody" class="js-toc-content" id="ks-content">
+             
+  <section id="creating-a-new-python-virtual-environment-based-on-ads-python">
+<h1>Creating a new Python virtual environment based on ADS Python<a class="headerlink" href="#creating-a-new-python-virtual-environment-based-on-ads-python" title="Link to this heading"></a></h1>
+<ol class="arabic">
+<li><p>Create a Python virtual environment (venv).</p>
+<p>The venv must be created using the Python shipped with ADS, or with another Python installation with the same major and minor version.</p>
+<p>Example for Linux:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nv">$HPEESOF_DIR</span>/tools/python/bin/python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>--system-site-packages<span class="w"> </span><span class="nv">$HOME</span>/ads_venv
+</pre></div>
+</div>
+<p>Example for Windows:</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="nv">%HPEESOF_DIR%</span>\tools\python\python -m venv --system-site-packages <span class="nv">%USERPROFILE%</span>\ads_venv
+</pre></div>
+</div>
+</li>
+<li><p>Select the venv by setting <strong>ADS_PYTHONHOME</strong>.</p>
+<p>This can be accomplished either as an environment variable or in de_sim.cfg (user level or above, i.e. not supported in workspace-level cfg)</p>
+<p>Example for Linux:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">ADS_PYTHONHOME</span><span class="o">=</span><span class="nv">$HOME</span>/ads_venv
+</pre></div>
+</div>
+<p>Example for Windows:</p>
+<div class="highlight-bat notranslate"><div class="highlight"><pre><span></span><span class="k">set</span> <span class="nv">ADS_PYTHONHOME</span><span class="p">=</span><span class="nv">%USERPROFILE%</span>\ads_venv
+</pre></div>
+</div>
+<p>To set the venv path in de_sim.cfg rather than an environment variable, add a line like this:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="na">ADS_PYTHONHOME</span><span class="o">=</span><span class="s">{$HOME}/ads_venv</span>
+</pre></div>
+</div>
+</li>
+<li><p>Run ADS. Python support is automatically enabled.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ads
+</pre></div>
+</div>
+<p>To verify the venv is being used, execute the menu <strong>Python-&gt;Python Console…</strong>, and type the following in the console:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The path to the Python executable will be displayed, and it should be prefixed by the venv path.</p>
+</li>
+</ol>
+</section>
+
+
+           </div>
+           <div id="onthispage_wrapper">
+            <div id="onthispageheader">On this page</div>
+            <div class="ks-onthispage" id="stickytoc">
+              <nav class="ks-stickytoc js-toc" id="onthispage"></nav>
+            </div>
+            </div>
+          </div>
+          <footer id="ks-footer">
+  <div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" tooltip-content="New Environment" accesskey="p" rel="prev"><span class="fa fa-angle-left" aria-hidden="true"></span> <div class="prevnexttext"><span id="previoustext">Previous</span><div class="title">New Environment</div></div></a>
+    </div>
+  
+    
+  <div role="contentinfo">
+    <div id="copyright">
+      <ul>
+        <li>&copy; Keysight Technologies 2000-<span id="year"></span>
+        </li>
+        <li>
+          <a href="https://www.keysight.com/in/en/contact/privacy.html" class="dtmData">Privacy</a>
+        </li>
+        <li> 
+          <a href="https://www.keysight.com/in/en/contact/terms-of-use.html" class="dtmData">Terms</a>
+        </li>
+        <li>
+          <a href="https://www.keysight.com/in/en/contact/support/site-feedback.html" class="dtmData">Feedback</a>
+        </li>
+      </ul>
+    </div>
+    <p>
+    </p>
+  </div>
+
+  
+   <span class="attribution">Built  with  <a href="https://www.sphinx-doc.org/">Sphinx</a>  using 
+    <a href="" id="rejoicedocs">'Rejoice' theme by Keysight </a>
+  </span>
+     
+ 
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    //TODO: sticky_navigation dependency removed by changing else 'false' to else 'true'. Without this, sticky_navigation if set to False, causes REJOICE-19. This needs better handling?
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XXXXXXXXXX', {
+          'anonymize_ip': false,
+      });
+    </script> 
+  <button onclick="backToTop()" id="backtotop"><em class="material-icons material-icons-round featurebutton">arrow_drop_up</em><span id="backtotoptext">Top</span></button>
+  
+  
+  <script>
+    var autodoc_linebreaks = "True";
+    var copyright = "2025, Sayanta Banerjee";    
+    var currentVersion = "0.0.1";
+    var dark_theme_caution = "False";
+    var description = "API Documentation";
+    var feedback = "True";
+    var feedback_url = "https://feedback.software.keysight.com/form";
+    var on_this_page = "True";
+    var projectName = "demosphinxproject";
+    var toc_resize = "True";
+  </script>
+
+
+  <div id="feedbackdata">
+      <script>
+    function target_popup(form) {
+        window.open(
+            '',
+            'FeedForm',
+            'width=950,height=700,resizeable,scrollbars,toolbar=no,status=no,location=no,left=0,top=0,directori' +
+            'es=no'
+        );
+        form.target = 'FeedForm';
+    }
+</script>
+
+<form id="FeedForm" action="https://feedback.software.keysight.com/pathwave/feedback/form" method="post"
+    onsubmit="target_popup(this)">
+    <input type="hidden" name="productname" value="demosphinxproject" />
+    <input type="hidden" name="pagetitle" value="Creating a new Python virtual environment based on ADS Python" />
+    <input type="hidden" name="doctype" value="rejoice" />
+    <input type="hidden" name="version" value="demosphinxproject 0.0.1" />
+    <input type="hidden" name="url" value="howto/newenv.html" />
+</form>
+  </div>
+
+
+
+</body>
+</html>

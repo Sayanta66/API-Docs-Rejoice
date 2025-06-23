@@ -6,4 +6,4 @@ New Environment
    :maxdepth: 2
 
    newenv
-    howtosetup/index
+   How-to-Setup/index

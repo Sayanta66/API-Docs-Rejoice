@@ -39,3 +39,14 @@ Documentation Hyperlink
 Here is a documentation hyperlink:
 
 Click on :doc:`Learning with Python <new-file>` to learn more about Python.
+
+Here is a documentation hyperlink:
+
+Click on :doc:`Learning with Python <new-file>` to learn more about Python.
+
+Downloadable Hyperlink
+----------------------
+
+Here is a downloadable hyperlink:
+
+Refer to the :download:`RST Cheat Sheet <files/reST_cheat_sheet.pdf>` for a quick reference on reStructuredText syntax.

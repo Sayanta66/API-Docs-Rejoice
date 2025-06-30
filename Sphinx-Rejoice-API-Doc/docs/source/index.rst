@@ -16,4 +16,5 @@ This is a new Sphinx project created for demonstration purposes.
    usage
    new-file
    img-links
+   syntaxes
    howto/index
